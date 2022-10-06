@@ -32,12 +32,12 @@ public class EstruturaSwitch1 {
 	        descricaoNota = "Opção inválida";
 	        break;
 	    }
-
-	    
 	    System.out.printf("Sua nota foi: %d - %s%n", nota, descricaoNota);
 	   
 	    */
-	    
+		
+
+		/*
 	    //Outro exemplo
 	    System.out.print("Digite um dia da semana (ex: seg, ter, qua, etc): ");
 	    String diaSemana = entrada.nextLine();
@@ -60,8 +60,55 @@ public class EstruturaSwitch1 {
 	      default:
 	        horarioFuncionamento = "Dia inválido";
 	    }
-
+	    
 	    System.out.printf("Horário de funcionamento: %s%n", horarioFuncionamento);
+	   */
+	    
+		
+		//Usado a partir do Java 14
+		/*
+	    System.out.print("Dia da semana (ex: seg, ter, qua, etc): ");
+	    String diaSemana2 = entrada.nextLine();
+ 
+	    System.out.print("Mês: ");
+	    int mes = entrada.nextInt();
+
+	    System.out.printf("Horário de funcionamento: %s%n", switch (diaSemana2) {
+	      case "seg" -> {
+	         if (mes == 12) {
+	           yield "08:00 às 16:00";
+	         }
+	         yield "Fechado";
+	      }
+	      case "ter", "qua", "qui", "sex" -> "08:00 às 18:00";
+	      case "sab", "dom" -> "08:00 às 12:00";
+	      default -> "Dia inválido";
+	    });
+	    
+	    */
+
+	    /*
+	    String horarioFuncionamento = switch (diaSemana) {
+	      case "seg" -> "Fechado";
+	      case "ter", "qua", "qui", "sex" -> "08:00 às 18:00";
+	      case "sab", "dom" -> "08:00 às 12:00";
+	      default -> "Dia inválido";
+	    };
+	    */
+
+	    /*
+	    String horarioFuncionamento;
+	    switch (diaSemana) {
+	      case "seg" -> horarioFuncionamento = "Fechado";
+	      case "ter", "qua", "qui", "sex" -> horarioFuncionamento = "08:00 às 18:00";
+	      case "sab", "dom" -> {
+	        horarioFuncionamento = "08:00 às 12:00";
+	      }
+	      default -> horarioFuncionamento = "Dia inválido";
+	    }
+	     */
+	    // System.out.printf("Horário de funcionamento: %s%n", horarioFuncionamento);
+
 	  }
 
 	}
