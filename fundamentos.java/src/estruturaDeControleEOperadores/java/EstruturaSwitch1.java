@@ -65,7 +65,7 @@ public class EstruturaSwitch1 {
 	   */
 	    
 		
-		//Usado a partir do Java 14
+	
 		/*
 	    System.out.print("Dia da semana (ex: seg, ter, qua, etc): ");
 	    String diaSemana2 = entrada.nextLine();
@@ -86,6 +86,7 @@ public class EstruturaSwitch1 {
 	    });
 	    
 	    */
+		
 
 	    /*
 	    String horarioFuncionamento = switch (diaSemana) {
