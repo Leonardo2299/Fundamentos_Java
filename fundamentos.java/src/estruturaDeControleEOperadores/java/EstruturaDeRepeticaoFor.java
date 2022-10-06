@@ -3,6 +3,8 @@ package estruturaDeControleEOperadores.java;
 import java.util.Scanner;
 
 public class EstruturaDeRepeticaoFor {
+	
+	//MAIS USADO PARA QUANDO SE SABE O NÚMERO DE REPETIÇÕES
 
 	public static void main(String[] args) {
 		// for (int i = 1; i <= 10; i++) {
