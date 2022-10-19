@@ -26,6 +26,9 @@ public class Principal {
         seuCarro.modelo = "X6";
         seuCarro.proprietario = voce;
 
+        meuCarro.calcularValorRevenda();
+        seuCarro.calcularValorRevenda();
+
         System.out.println("Meu carro");
         System.out.println("---------");
         System.out.printf("Modelo: %s%n", meuCarro.modelo);
