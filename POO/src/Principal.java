@@ -26,8 +26,10 @@ public class Principal {
         seuCarro.precoCompra = 980000;
         seuCarro.proprietario = voce;
 
-        meuCarro.calcularValorRevenda();
-        seuCarro.calcularValorRevenda();
+        double valorRevendaMeuCarro = meuCarro.calcularValorRevenda();
+
+        System.out.printf("Tempo de uso (anos): %d%n", 2022 - meuCarro.anoFabricacao);
+        System.out.printf("Valor de revenda: %6.2f%n", valorRevendaMeuCarro);
 
 //        System.out.println("Meu carro");
 //        System.out.println("---------");
