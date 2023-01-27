@@ -1,0 +1,14 @@
+public class Principal {
+
+    public static void main(String[] args) {
+        Integer numero1 = 128;
+        Integer numero2 = 128;
+        Short numero3 = 128;
+
+        //para comparar o número1 com número 2 tem que usar o .equals, pois assim compara o número que está dentro. 
+        //Se usar o == vai comparar somente endereço de memória, sendo que o Integer vai de -128 a 127
+        System.out.println(numero1.equals(numero2));
+        System.out.println(numero1.intValue() == numero3.intValue());
+    }
+
+}
