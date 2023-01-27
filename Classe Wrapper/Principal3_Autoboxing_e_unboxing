@@ -1,0 +1,14 @@
+public class Principal3_Autoboxing_e_unboxing {
+
+    public static void main(String[] args) {
+       
+       //as 2 linhas abaixo são iguais
+       Integer diasEntrega = Integer.valueOf(30);
+        Integer diasEntrega = 30;
+        
+        //as 2 linhas abaixo são iguais
+        int diasEntregaInt = diasEntrega.intValue();
+        int diasEntregaInt = diasEntrega;
+    }
+
+}
