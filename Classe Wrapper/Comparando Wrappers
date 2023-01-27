@@ -9,6 +9,11 @@ public class Principal {
         //Se usar o == vai comparar somente endereço de memória, sendo que o Integer vai de -128 a 127
         System.out.println(numero1.equals(numero2));
         System.out.println(numero1.intValue() == numero3.intValue());
+        
+        
+        //pode comparar assim também. Se retornar 0, os 2 números são iguais. Se retornar positivo, o primeiro número é maior que o segundo.
+        //E se retornar negativo, o primeiro número é menor que o segundo.
+        System.out.println(numero1.compareTo(numero2) == 0);
     }
 
 }
